@@ -279,9 +279,7 @@ class Employee1(Employee):
 # Make instance of the class
 emp1 = Employee1("Hoax", "Snowden", 50000)
 print(repr(emp1))  # Shows representation of the class
-print(
-    emp1
-)  # You can just print it because__str__ will be used instead of the __repr__ as __str__ is the last thing in the class
+print(emp1)  # You can just print it because__str__ will be used instead of the __repr__ as __str__ is the last thing in the class
 
 # We can also use __add__, search for https://docs.python.org/3/reference/datamodel.html to see another dunder methods
 # Check the dunder add method in our class
@@ -350,9 +348,7 @@ class Employee:
 
 # Make instance of the class
 emp1 = Employee("Hoax", "Snowden", 50000)
-print(
-    emp1.fullname
-)  # As you can see, we do not need to put () because it is now a property and not a method anymore
+print(emp1.fullname)  # As you can see, we do not need to put () because it is now a property and not a method anymore
 print(emp1.email)  # I also made a property for this email
 
 ##Setters and deleters
